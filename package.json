@@ -1,0 +1,25 @@
+{
+  "name": "movieapi",
+  "version": "1.0.0",
+  "description": "Using API to retrieve movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ngufuli/movieAPI.git"
+  },
+  "keywords": [
+    "NODEJS",
+    "EXPRESS",
+    "EJS",
+    "API"
+  ],
+  "author": "Nicodemus Peter Ngufuli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ngufuli/movieAPI/issues"
+  },
+  "homepage": "https://github.com/Ngufuli/movieAPI#readme"
+}
