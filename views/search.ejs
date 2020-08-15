@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<body class="bg-dark">
+    <!-- Navbar begins here -->
+    
+        <nav class="nav navbar-expand-sm bg-secondary navbar-secondary">
+            <span class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="" alt="Logo" style="width: 40px;">
+                </a>
+                 
+                <span>
+                    <a href="#" class="text-white ml-2">ONE</a>
+                </span>
+                <span>
+                    <a href="#" class="text-white ml-2">TWO</a>
+                </span>
+                <span>
+                    <a href="#" class="text-white ml-2">THREE</a>
+                </span>
+            </span>
+            
+        </nav>
+    
+
+    <!-- container begins here-->
+    <div class="container pt-5">
+        <!-- Jumbotron begins here -->
+        <div class="pt-5">
+            <div class="text-center text-warning p-3">
+                <h2>Search for movies, actors and directors</h2>
+            </div>
+            <div class="">
+                <form action="result.ejs" method="GET" class="justify-content-center d-flex">
+                    <input type="search" name="search" class="form-control w-25 bg-dark text-white" value="Avengers">
+                    <input type="submit" class="btn btn-warning ml-2" value="Search">
+                </form>
+            </div>
+        </div>
+        <!-- jumbotron ends here -->
+    </div>
+    <!-- container ended here -->
+ 
+<!-- scripts begin here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
