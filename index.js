@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const request = require('request');
 
-const port = 4444;
+const port = process.env.PORT || 4444;
 
 const app = express();
 
