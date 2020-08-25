@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const request = require('request');
 
 const port = 4444;
 
@@ -14,7 +15,18 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/result', (req, res)=>{
-    res.render('result');
+   
+    let query = req.query.search;
+
+    request("https://api.themoviedb.org/3/search/movie?api_key=4522208f3671172e960d09695d85924d&query="+query, (error, response, body)=>{
+        if(error){
+            console.log(error);
+        }else{
+            let data = JSON.parse(body);
+            res.render('result', {data: data, querySearch: query});
+        }
+       
+    })
 })
 
 app.listen(port, ()=>{
